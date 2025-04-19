@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   dishItems.forEach(item => {
     item.addEventListener('click', () => {
-      // Presupozohen formatet: "Emri i pjates - Çmimi"
+      // Presupozohet se format i tekstit është "Emri i pjates - Çmimi"
       const fullText = item.textContent.trim();
       const parts = fullText.split(" - ");
       if (parts.length === 2) {
