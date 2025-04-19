@@ -42,7 +42,7 @@ header {
   animation-delay: 0s;
 }
 .slide:nth-child(2) {
-  background-image: url('');
+  background-image: url('https://github.com/Erjol-0/erjol-0.github.io/blob/main/img2.jpg?raw=true');
   animation-delay: 3s;
 }
 .slide:nth-child(3) {
