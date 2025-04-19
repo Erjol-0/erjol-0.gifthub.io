@@ -11,95 +11,36 @@ body {
 
 header {
   background-color: #4682B4 !important; /* Bojëqielli - Steel Blue */
-  padding: 20px;
-  font-size: 28px;
-  font-weight: 600;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Slideshow Hero Styles */
-.slideshow {
-  position: relative;
+/* Header Content & Image */
+.header-content {
+  padding: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.header-image img {
   width: 100%;
-  height: 400px; /* Modifikoni sipas dëshirës */
-  margin-bottom: 30px;
-  overflow: hidden;
+  max-height: 300px;
+  object-fit: cover;
 }
 
-.slide {
-  position: absolute;
+/* Featured Section */
+.featured img {
   width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  opacity: 0;
-  animation: fade 36s infinite;
+  max-height: 400px;
+  object-fit: cover;
+  margin: 30px 0;
 }
 
-/* Caktojmë 12 foto me një vonesë prej 3 sekondash secila */
-.slide:nth-child(1) {
-  background-image: url('https://github.com/Erjol-0/erjol-0.github.io/blob/main/img1.jpg?raw=true');
-  animation-delay: 0s;
-}
-.slide:nth-child(2) {
-  background-image: url('https://github.com/Erjol-0/erjol-0.github.io/blob/main/img2.jpg?raw=true');
-  animation-delay: 3s;
-}
-.slide:nth-child(3) {
-  background-image: url('https://github.com/Erjol-0/erjol-0.github.io/blob/main/img3.jpg?raw=true');
-  animation-delay: 6s;
-}
-.slide:nth-child(4) {
-  background-image: url('https://github.com/Erjol-0/erjol-0.github.io/blob/main/img4.jpg?raw=true');
-  animation-delay: 9s;
-}
-.slide:nth-child(5) {
-  background-image: url('https://github.com/Erjol-0/erjol-0.github.io/blob/main/img5.jpg?raw=true');
-  animation-delay: 12s;
-}
-.slide:nth-child(6) {
-  background-image: url('https://github.com/Erjol-0/erjol-0.github.io/blob/main/img6.jpg?raw=true');
-  animation-delay: 15s;
-}
-.slide:nth-child(7) {
-  background-image: url('https://github.com/Erjol-0/erjol-0.github.io/blob/main/img7.jpg?raw=true');
-  animation-delay: 18s;
-}
-.slide:nth-child(8) {
-  background-image: url('https://github.com/Erjol-0/erjol-0.github.io/blob/main/img8.jpg?raw=true');
-  animation-delay: 21s;
-}
-.slide:nth-child(9) {
-  background-image: url('https://github.com/Erjol-0/erjol-0.github.io/blob/main/img9.jpg?raw=true');
-  animation-delay: 24s;
-}
-.slide:nth-child(10) {
-  background-image: url('https://github.com/Erjol-0/erjol-0.github.io/blob/main/img10.jpg?raw=true');
-  animation-delay: 27s;
-}
-.slide:nth-child(11) {
-  background-image: url('https://github.com/Erjol-0/erjol-0.github.io/blob/main/img11.jpg?raw=true');
-  animation-delay: 30s;
-}
-.slide:nth-child(12) {
-  background-image: url('https://github.com/Erjol-0/erjol-0.github.io/blob/main/img12.jpg?raw=true');
-  animation-delay: 33s;
-}
-
-@keyframes fade {
-  0%   { opacity: 0; }
-  8%   { opacity: 1; }
-  25%  { opacity: 1; }
-  33%  { opacity: 0; }
-  100% { opacity: 0; }
-}
-
-/* Menu Content Styles */
+/* Main Content Styles */
 main {
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #fff; /* Hapësirë e pastër për çdo seksion */
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -107,6 +48,18 @@ main {
 section {
   margin-bottom: 40px;
   padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.section-image {
+  margin-bottom: 20px;
+}
+
+.section-image img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 h2 {
@@ -141,4 +94,13 @@ footer {
   border-radius: 0 0 10px 10px;
   margin-top: 20px;
   color: #fff;
+  text-align: center;
+}
+
+.footer-image img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
