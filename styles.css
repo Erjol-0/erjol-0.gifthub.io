@@ -1,106 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
-  text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #fdfdfd;
-  color: #333;
-}
-
-header {
-  background-color: #4682B4 !important; /* Bojëqielli - Steel Blue */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Header Content & Image */
-.header-content {
-  padding: 20px;
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.header-image img {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-}
-
-/* Featured Section */
-.featured img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  margin: 30px 0;
-}
-
-/* Main Content Styles */
-main {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-section {
-  margin-bottom: 40px;
-  padding: 20px;
-  border-top: 1px solid #ddd;
-}
-
-.section-image {
-  margin-bottom: 20px;
-}
-
-.section-image img {
-  width: 100%;
-  max-height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-h2 {
-  font-size: 26px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  font-size: 18px;
-  padding: 10px;
-  margin: 5px 0;
-  background-color: rgba(230, 57, 70, 0.1);
-  border-radius: 8px;
-  transition: background 0.3s ease;
-}
-
-li:hover {
-  background-color: rgba(230, 57, 70, 0.3);
-  cursor: pointer;
-}
-
-footer {
-  background-color: rgba(34, 34, 34, 0.8);
-  padding: 15px;
-  font-size: 14px;
-  border-radius: 0 0 10px 10px;
-  margin-top: 20px;
   color: #fff;
-  text-align: center;
+  line-height: 1.5;
 }
 
-.footer-image img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  margin-bottom: 15px;
-  border-radius: 10px;
+/* Në të gjitha seksionet, vendosim background images dhe pozicionim për tekstin sipër tyre */
+header, .menu-section, footer {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Klasa për një overlay të errët për lexueshmëri */
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header me foto background */
+.bg-header {
+  height: 300px;
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img1.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Seksioni Featured */
+.bg-featured {
+  height: 400px;
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img2.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Seksionet e menusë: vendosim background për secilin sipas URL-t */
+.bg-antipasti {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img3.jpg');
+  min-height: 300px;
+}
+
+.bg-secondi {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img4.jpg');
+  min-height: 300px;
+}
+
+.bg-insalatone {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img5.jpg');
+  min-height: 300px;
+}
+
+.bg-pizze {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img6.jpg');
+  min-height: 300px;
+}
+
+.bg-pizze-speciali {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img7.jpg');
+  min-height: 300px;
+}
+
+.bg-desserts {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img8.jpg');
+  min-height: 300px;
+}
+
+.bg-bevande {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img9.jpg');
+  min-height: 300px;
+}
+
+.bg-vini {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img10.jpg');
+  min-height: 300px;
+}
+
+.bg-prosecco {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img11.jpg');
+  min-height: 300px;
+}
+
+/* Footer background */
+.bg-footer {
+  height: 200px;
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img12.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Stilizimi i titujve dhe logjes */
+header h1,
+.menu-section h2,
+footer p {
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Listat e menusë */
+.menu-section ul {
+  list-style: none;
+  padding: 10px 0 0 0;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.menu-section li {
+  margin-bottom: 10px;
+  font-size: 18px;
 }
