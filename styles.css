@@ -8,18 +8,18 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  color: #fff;
-  line-height: 1.5;
+  background-color: #fdfdfd;
 }
 
-/* Në të gjitha seksionet, vendosim background images dhe pozicionim për tekstin sipër tyre */
+/* Të gjitha seksionet me sfondin nga fotot, teksti duhet të jetë i lexueshëm */
 header, .menu-section, footer {
   position: relative;
   background-size: cover;
   background-position: center;
+  color: #fff;
 }
 
-/* Klasa për një overlay të errët për lexueshmëri */
+/* Overlay për transparencë, që e bën tekstin të dallojë mbi sfondin */
 .overlay {
   background: rgba(0, 0, 0, 0.5);
   padding: 20px;
@@ -27,7 +27,7 @@ header, .menu-section, footer {
   z-index: 1;
 }
 
-/* Header me foto background */
+/* Header: sfondi nga img1 */
 .bg-header {
   height: 300px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img1.jpg');
@@ -36,7 +36,7 @@ header, .menu-section, footer {
   justify-content: center;
 }
 
-/* Seksioni Featured */
+/* Featured section: sfondi nga img2 */
 .bg-featured {
   height: 400px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img2.jpg');
@@ -45,53 +45,62 @@ header, .menu-section, footer {
   justify-content: center;
 }
 
-/* Seksionet e menusë: vendosim background për secilin sipas URL-t */
+/* Seksionet e menusë me sfondin e tyre respectiv */
 .bg-antipasti {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img3.jpg');
   min-height: 300px;
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img3.jpg');
+  padding: 40px 20px;
 }
 
 .bg-secondi {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img4.jpg');
   min-height: 300px;
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img4.jpg');
+  padding: 40px 20px;
 }
 
 .bg-insalatone {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img5.jpg');
   min-height: 300px;
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img5.jpg');
+  padding: 40px 20px;
 }
 
 .bg-pizze {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img6.jpg');
   min-height: 300px;
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img6.jpg');
+  padding: 40px 20px;
 }
 
 .bg-pizze-speciali {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img7.jpg');
   min-height: 300px;
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img7.jpg');
+  padding: 40px 20px;
 }
 
 .bg-desserts {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img8.jpg');
   min-height: 300px;
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img8.jpg');
+  padding: 40px 20px;
 }
 
 .bg-bevande {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img9.jpg');
   min-height: 300px;
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img9.jpg');
+  padding: 40px 20px;
 }
 
 .bg-vini {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img10.jpg');
   min-height: 300px;
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img10.jpg');
+  padding: 40px 20px;
 }
 
 .bg-prosecco {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img11.jpg');
   min-height: 300px;
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img11.jpg');
+  padding: 40px 20px;
 }
 
-/* Footer background */
+/* Footer: sfondi nga img12 */
 .bg-footer {
   height: 200px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img12.jpg');
@@ -100,7 +109,7 @@ header, .menu-section, footer {
   justify-content: center;
 }
 
-/* Stilizimi i titujve dhe logjes */
+/* Stilizimi i titujve dhe listave */
 header h1,
 .menu-section h2,
 footer p {
@@ -109,16 +118,20 @@ footer p {
   z-index: 2;
 }
 
-/* Listat e menusë */
+.menu-section h2 {
+  margin-bottom: 15px;
+}
+
 .menu-section ul {
   list-style: none;
-  padding: 10px 0 0 0;
+  padding-left: 0;
   margin: 0;
   position: relative;
   z-index: 2;
 }
 
 .menu-section li {
-  margin-bottom: 10px;
   font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 8px;
 }
