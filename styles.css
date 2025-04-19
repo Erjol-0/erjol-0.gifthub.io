@@ -11,24 +11,17 @@ body {
   background-color: #fdfdfd;
 }
 
-/* Secili seksion ka sfondin e vet dhe hapësirë midis tyre */
-header, .menu-section, footer {
+/* Të gjitha seksionet me sfond */
+header, .bg-featured, .menu-section, footer {
   position: relative;
   background-size: cover;
   background-position: center;
-  color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* Hapësira mes seksioneve */
   padding: 20px;
+  color: #fff;
 }
 
-/* Shtojmë një tekst-hedhje (text-shadow) për lexueshmëri */
-header h1,
-.menu-section h2,
-footer p {
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-}
-
-/* Background Image Classes (img1 - img12) */
+/* Header (img1) */
 .bg-header {
   height: 300px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img1.jpg');
@@ -37,6 +30,12 @@ footer p {
   justify-content: center;
 }
 
+header h1 {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  font-size: 36px;
+}
+
+/* Featured section (img2) */
 .bg-featured {
   height: 400px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img2.jpg');
@@ -45,51 +44,52 @@ footer p {
   justify-content: center;
 }
 
+.featured-title {
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Menu sections: sfondet nga img3 deri tek img11 */
 .bg-antipasti {
-  min-height: 300px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img3.jpg');
+  min-height: 300px;
 }
-
 .bg-secondi {
-  min-height: 300px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img4.jpg');
+  min-height: 300px;
 }
-
 .bg-insalatone {
-  min-height: 300px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img5.jpg');
+  min-height: 300px;
 }
-
 .bg-pizze {
-  min-height: 300px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img6.jpg');
+  min-height: 300px;
 }
-
 .bg-pizze-speciali {
-  min-height: 300px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img7.jpg');
+  min-height: 300px;
 }
-
 .bg-desserts {
-  min-height: 300px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img8.jpg');
+  min-height: 300px;
 }
-
 .bg-bevande {
-  min-height: 300px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img9.jpg');
+  min-height: 300px;
 }
-
 .bg-vini {
-  min-height: 300px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img10.jpg');
-}
-
-.bg-prosecco {
   min-height: 300px;
+}
+.bg-prosecco {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img11.jpg');
+  min-height: 300px;
 }
 
+/* Footer (img12) */
 .bg-footer {
   height: 200px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img12.jpg');
@@ -98,8 +98,15 @@ footer p {
   justify-content: center;
 }
 
-/* Stilizimi i titujve */
+footer p {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+}
+
+/* Stylimi i titujve të seksioneve */
 .menu-section h2 {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  font-size: 28px;
   margin-bottom: 15px;
 }
 
@@ -107,26 +114,32 @@ footer p {
 .menu-section ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
+/* Secili element i menusë */
 .menu-section li {
-  margin-bottom: 10px;
-  font-size: 18px;
-  /* Çdo element shfaqet në mënyrë vertikale, me butonin sipër (si bllok) dhe produktin poshtë tij */
+  position: relative;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.8); /* sfond translusent për lexim */
+  color: #000;
+  border-radius: 4px;
 }
 
-/* Butoni "Porosit" me hije */
+/* Butoni i porosisë: Vendoset sipër, në anën e djathtë, absolute */
 .order-btn {
-  display: block;
-  margin-bottom: 5px;
-  background: #fff;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(255, 255, 255, 0.9);
   color: #4682B4;
   border: none;
   padding: 8px 12px;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .order-btn:hover {
