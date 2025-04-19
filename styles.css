@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-color: rgba(70, 130, 180, 0.8);
+  background-color: #4682B4 !important; /* Bojëqielli - Steel Blue */
   padding: 20px;
   font-size: 28px;
   font-weight: 600;
