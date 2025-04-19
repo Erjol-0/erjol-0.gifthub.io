@@ -46,7 +46,7 @@ body {
   margin-bottom: 40px;
   position: relative;
   color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 .menu-section h2 {
   margin-bottom: 20px;
@@ -116,14 +116,39 @@ body {
   padding-left: 0;
 }
 .menu-section li {
+  position: relative;
   padding: 10px 15px;
   margin-bottom: 10px;
-  background: rgba(255, 255, 255, 0.8);
-  color: #000;
+  background: transparent;  /* Heqim overlay-n konstant */
+  color: #fff;
   border-radius: 4px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
+  /* Shton një tekst-hedhje për lexueshmëri */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
-.menu-section li:hover {
-  background: rgba(255, 255, 255, 1);
+
+/* Overlay sipas hover-it mbi një pjatë */
+.menu-section li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.menu-section li:hover::before {
+  opacity: 1;
+}
+
+/* Sigurojmë që përmbajtja e li-së të shfaqet mbi overlay */
+.menu-section li > * {
+  position: relative;
+  z-index: 1;
 }
