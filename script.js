@@ -1,8 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const menuItems = document.querySelectorAll("li");
-  menuItems.forEach(item => {
-    item.addEventListener("click", function() {
-      alert(`Hai scelto: ${this.textContent}`);
-    });
-  });
-});
+function orderDish(dish, price) {
+  // Këtu vendoset logjika për porosi; për shembull:
+  alert("Ju keni zgjedhur: " + dish + " - " + price);
+  // Mund të shtoni më tej kod për të dërguar porosinë në server ose për ta regjistruar në sistemin tuaj.
+}
