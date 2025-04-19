@@ -1,222 +1,230 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu - Lido Azzurro</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Header me sfond nga img1 -->
-  <header class="bg-header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Lido Azzurro</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header: Sfondo nga img1 -->
+    <header class="bg-header">
       <h1>Menù del Ristorante - Lido Azzurro</h1>
-  </header>
+    </header>
 
-  <!-- Featured Section me sfond nga img2 -->
-  <section class="bg-featured">
-      <h2>Benvenuti</h2>
-  </section>
-
-  <main>
-    <!-- Antipasti & Primi Piatti me sfond nga img3 -->
-    <section class="menu-section bg-antipasti">
-      <h2>Antipasti & Primi Piatti</h2>
-      <ul>
-          <li>
-              <button class="order-btn">Porosit</button>
-              <span>Caprese - €10,00</span>
-          </li>
-          <li>
-              <button class="order-btn">Porosit</button>
-              <span>Prosciutto crudo e melone - €14,00</span>
-          </li>
-          <li>
-              <button class="order-btn">Porosit</button>
-              <span>Zuppa di cozze - €12,00</span>
-          </li>
-          <li>
-              <button class="order-btn">Porosit</button>
-              <span>Spaghetti alle vongole - €15,00</span>
-          </li>
-          <li>
-              <button class="order-btn">Porosit</button>
-              <span>Spaghetti allo scoglio - €15,00</span>
-          </li>
-          <li>
-              <button class="order-btn">Porosit</button>
-              <span>Risotto ai frutti di mare - €15,00</span>
-          </li>
-      </ul>
+    <!-- Featured section: Sfondo nga img2 me titull "Benvenuti" të theksuar -->
+    <section class="bg-featured">
+      <h2 class="featured-title">Benvenuti</h2>
     </section>
 
-    <!-- Secondi Piatti - Pesce & Carne me sfond nga img4 -->
-    <section class="menu-section bg-secondi">
-      <h2>Secondi Piatti - Pesce & Carne</h2>
-      <ul>
+    <main>
+      <!-- Antipasti & Primi Piatti: Sfondo nga img3 -->
+      <section class="menu-section bg-antipasti">
+        <h2>Antipasti & Primi Piatti</h2>
+        <ul>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Filetto di Branzino - €18,00</span>
+            <span>Caprese - €10,00</span>
+            <button class="order-btn" onclick="orderDish('Caprese')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Orata al forno - €16,00</span>
+            <span>Prosciutto crudo e melone - €14,00</span>
+            <button class="order-btn" onclick="orderDish('Prosciutto crudo e melone')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Bistecca alla Fiorentina - €22,00</span>
+            <span>Zuppa di cozze - €12,00</span>
+            <button class="order-btn" onclick="orderDish('Zuppa di cozze')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Pollo alla Cacciatora - €17,00</span>
+            <span>Spaghetti alle vongole - €15,00</span>
+            <button class="order-btn" onclick="orderDish('Spaghetti alle vongole')">Order</button>
           </li>
-      </ul>
-    </section>
+          <li>
+            <span>Spaghetti allo scoglio - €15,00</span>
+            <button class="order-btn" onclick="orderDish('Spaghetti allo scoglio')">Order</button>
+          </li>
+          <li>
+            <span>Risotto ai frutti di mare - €15,00</span>
+            <button class="order-btn" onclick="orderDish('Risotto ai frutti di mare')">Order</button>
+          </li>
+        </ul>
+      </section>
 
-    <!-- Insalatone, Contorni & Panini Gourmet me sfond nga img5 -->
-    <section class="menu-section bg-insalatone">
-      <h2>Insalatone, Contorni & Panini Gourmet</h2>
-      <ul>
+      <!-- Secondi Piatti - Pesce & Carne: Sfondo nga img4 -->
+      <section class="menu-section bg-secondi">
+        <h2>Secondi Piatti - Pesce & Carne</h2>
+        <ul>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Insalata mista - €8,00</span>
+            <span>Filetto di Branzino - €18,00</span>
+            <button class="order-btn" onclick="orderDish('Filetto di Branzino')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Patate al forno - €7,00</span>
+            <span>Orata al forno - €16,00</span>
+            <button class="order-btn" onclick="orderDish('Orata al forno')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Panino con Salame & Mozzarella - €9,00</span>
+            <span>Bistecca alla Fiorentina - €22,00</span>
+            <button class="order-btn" onclick="orderDish('Bistecca alla Fiorentina')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Bruschette miste - €6,00</span>
+            <span>Pollo alla Cacciatora - €17,00</span>
+            <button class="order-btn" onclick="orderDish('Pollo alla Cacciatora')">Order</button>
           </li>
-      </ul>
-    </section>
+        </ul>
+      </section>
 
-    <!-- Pizze me sfond nga img6 -->
-    <section class="menu-section bg-pizze">
-      <h2>Pizze</h2>
-      <ul>
+      <!-- Insalatone, Contorni & Panini Gourmet: Sfondo nga img5 -->
+      <section class="menu-section bg-insalatone">
+        <h2>Insalatone, Contorni & Panini Gourmet</h2>
+        <ul>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Margherita - €8,00</span>
+            <span>Insalata mista - €8,00</span>
+            <button class="order-btn" onclick="orderDish('Insalata mista')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Marinara - €7,50</span>
+            <span>Patate al forno - €7,00</span>
+            <button class="order-btn" onclick="orderDish('Patate al forno')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Quattro Stagioni - €10,00</span>
+            <span>Panino con Salame & Mozzarella - €9,00</span>
+            <button class="order-btn" onclick="orderDish('Panino con Salame & Mozzarella')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Diavola - €10,00</span>
+            <span>Bruschette miste - €6,00</span>
+            <button class="order-btn" onclick="orderDish('Bruschette miste')">Order</button>
           </li>
-      </ul>
-    </section>
+        </ul>
+      </section>
 
-    <!-- Pizze Speciali me sfond nga img7 -->
-    <section class="menu-section bg-pizze-speciali">
-      <h2>Pizze Speciali</h2>
-      <ul>
+      <!-- Pizze: Sfondo nga img6 -->
+      <section class="menu-section bg-pizze">
+        <h2>Pizze</h2>
+        <ul>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Pizza al Tartufo - €14,00</span>
+            <span>Margherita - €8,00</span>
+            <button class="order-btn" onclick="orderDish('Margherita')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Pizza ai Quattro Formaggi - €12,00</span>
+            <span>Marinara - €7,50</span>
+            <button class="order-btn" onclick="orderDish('Marinara')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Pizza con Prosciutto e Rucola - €13,00</span>
+            <span>Quattro Stagioni - €10,00</span>
+            <button class="order-btn" onclick="orderDish('Quattro Stagioni')">Order</button>
           </li>
-      </ul>
-    </section>
+          <li>
+            <span>Diavola - €10,00</span>
+            <button class="order-btn" onclick="orderDish('Diavola')">Order</button>
+          </li>
+        </ul>
+      </section>
 
-    <!-- Panuzzi & Dessert e Frutta me sfond nga img8 -->
-    <section class="menu-section bg-desserts">
-      <h2>Panuzzi & Dessert e Frutta</h2>
-      <ul>
+      <!-- Pizze Speciali: Sfondo nga img7 -->
+      <section class="menu-section bg-pizze-speciali">
+        <h2>Pizze Speciali</h2>
+        <ul>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Tiramisù - €6,50</span>
+            <span>Pizza al Tartufo - €14,00</span>
+            <button class="order-btn" onclick="orderDish('Pizza al Tartufo')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Cheesecake al Limoncello - €7,00</span>
+            <span>Pizza ai Quattro Formaggi - €12,00</span>
+            <button class="order-btn" onclick="orderDish('Pizza ai Quattro Formaggi')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Frutta Fresca - €5,00</span>
+            <span>Pizza con Prosciutto e Rucola - €13,00</span>
+            <button class="order-btn" onclick="orderDish('Pizza con Prosciutto e Rucola')">Order</button>
           </li>
-      </ul>
-    </section>
+        </ul>
+      </section>
 
-    <!-- Bevande e Vini Sfusi me sfond nga img9 -->
-    <section class="menu-section bg-bevande">
-      <h2>Bevande e Vini Sfusi</h2>
-      <ul>
+      <!-- Panuzzi & Dessert e Frutta: Sfondo nga img8 -->
+      <section class="menu-section bg-desserts">
+        <h2>Panuzzi & Dessert e Frutta</h2>
+        <ul>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Birra Artigianale (0,33L) - €4,50</span>
+            <span>Tiramisù - €6,50</span>
+            <button class="order-btn" onclick="orderDish('Tiramisù')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Bibita (cola, aranciata) - €3,00</span>
+            <span>Cheesecake al Limoncello - €7,00</span>
+            <button class="order-btn" onclick="orderDish('Cheesecake al Limoncello')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Acqua Naturale/Frizzante - €2,50</span>
+            <span>Frutta Fresca - €5,00</span>
+            <button class="order-btn" onclick="orderDish('Frutta Fresca')">Order</button>
           </li>
-      </ul>
-    </section>
+        </ul>
+      </section>
 
-    <!-- Vini Rossi, Bianchi & Rosé me sfond nga img10 -->
-    <section class="menu-section bg-vini">
-      <h2>Vini Rossi, Bianchi & Rosé</h2>
-      <ul>
+      <!-- Bevande e Vini Sfusi: Sfondo nga img9 -->
+      <section class="menu-section bg-bevande">
+        <h2>Bevande e Vini Sfusi</h2>
+        <ul>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Chianti Classico 2019 (Rossi) - €18,00</span>
+            <span>Birra Artigianale (0,33L) - €4,50</span>
+            <button class="order-btn" onclick="orderDish('Birra Artigianale (0,33L)')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Pinot Grigio 2020 (Bianchi) - €16,00</span>
+            <span>Bibita (cola, aranciata) - €3,00</span>
+            <button class="order-btn" onclick="orderDish('Bibita (cola, aranciata)')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Rosé della Casa - €17,00</span>
+            <span>Acqua Naturale/Frizzante - €2,50</span>
+            <button class="order-btn" onclick="orderDish('Acqua Naturale/Frizzante')">Order</button>
           </li>
-      </ul>
-    </section>
+        </ul>
+      </section>
 
-    <!-- Prosecco e Bollicine & Champagne me sfond nga img11 -->
-    <section class="menu-section bg-prosecco">
-      <h2>Prosecco e Bollicine & Champagne</h2>
-      <ul>
+      <!-- Vini Rossi, Bianchi & Rosé: Sfondo nga img10 -->
+      <section class="menu-section bg-vini">
+        <h2>Vini Rossi, Bianchi & Rosé</h2>
+        <ul>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Prosecco DOC (Standard) - €12,00</span>
+            <span>Chianti Classico 2019 (Rossi) - €18,00</span>
+            <button class="order-btn" onclick="orderDish('Chianti Classico 2019 (Rossi)')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Bollicine Extra Dry - €15,00</span>
+            <span>Pinot Grigio 2020 (Bianchi) - €16,00</span>
+            <button class="order-btn" onclick="orderDish('Pinot Grigio 2020 (Bianchi)')">Order</button>
           </li>
           <li>
-              <button class="order-btn">Porosit</button>
-              <span>Champagne Brut - €40,00</span>
+            <span>Rosé della Casa - €17,00</span>
+            <button class="order-btn" onclick="orderDish('Rosé della Casa')">Order</button>
           </li>
-      </ul>
-    </section>
-  </main>
+        </ul>
+      </section>
 
-  <!-- Footer me sfond nga img12 -->
-  <footer class="bg-footer">
+      <!-- Prosecco e Bollicine & Champagne: Sfondo nga img11 -->
+      <section class="menu-section bg-prosecco">
+        <h2>Prosecco e Bollicine & Champagne</h2>
+        <ul>
+          <li>
+            <span>Prosecco DOC (Standard) - €12,00</span>
+            <button class="order-btn" onclick="orderDish('Prosecco DOC (Standard)')">Order</button>
+          </li>
+          <li>
+            <span>Bollicine Extra Dry - €15,00</span>
+            <button class="order-btn" onclick="orderDish('Bollicine Extra Dry')">Order</button>
+          </li>
+          <li>
+            <span>Champagne Brut - €40,00</span>
+            <button class="order-btn" onclick="orderDish('Champagne Brut')">Order</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer: Sfondo nga img12 -->
+    <footer class="bg-footer">
       <p>Coperto €2,00 - &copy; 2025 Lido Azzurro</p>
-  </footer>
-</body>
+    </footer>
+
+    <!-- JavaScript për shembull: Në këtë rast shfaqet një alert kur klikohet butoni -->
+    <script>
+      function orderDish(dish) {
+        // Këtu vendosni kodin tuaj për të procesuar porosinë
+        alert("Ju keni porositur: " + dish);
+      }
+    </script>
+  </body>
 </html>
