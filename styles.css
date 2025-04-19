@@ -1,154 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+/* Resetimi bazik */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #fdfdfd;
+  color: #333;
 }
 
-/* Secili seksion me sfondin e vet. Përdorim background-size: contain për ta shfaqur të plotë foton. */
-header, .bg-featured, .menu-section, footer {
-  position: relative;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
+/* Header */
+header {
+  background-color: #4682B4; /* ton boqielli */
   padding: 20px;
+  text-align: center;
   color: #fff;
 }
 
-/* Header (img1) */
-.bg-header {
-  height: 300px;
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img1.jpg');
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-header h1 {
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-  font-size: 36px;
-}
-
-/* Featured section (img2) - titulli i madh dhe stilizuar */
-.bg-featured {
-  height: 400px;
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img2.jpg');
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.featured-title {
-  font-size: 72px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-}
-
-/* Menu Sections: sfondet nga img3 deri tek img11 */
-.bg-antipasti {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img3.jpg');
-  min-height: 300px;
-}
-.bg-secondi {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img4.jpg');
-  min-height: 300px;
-}
-.bg-insalatone {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img5.jpg');
-  min-height: 300px;
-}
-.bg-pizze {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img6.jpg');
-  min-height: 300px;
-}
-.bg-pizze-speciali {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img7.jpg');
-  min-height: 300px;
-}
-.bg-desserts {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img8.jpg');
-  min-height: 300px;
-}
-.bg-bevande {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img9.jpg');
-  min-height: 300px;
-}
-.bg-vini {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img10.jpg');
-  min-height: 300px;
-}
-.bg-prosecco {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img11.jpg');
-  min-height: 300px;
-}
-
-/* Footer (img12) */
-.bg-footer {
-  height: 200px;
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img12.jpg');
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-footer p {
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-  font-size: 18px;
-}
-
-/* Stilizimi i titujve të seksioneve */
-.menu-section h2 {
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-/* Lista e menusë */
-.menu-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Secili element i menusë -- shtojmë sfond translusent për lexim */
-.menu-section li {
+/* Slideshow "Hero" */
+.slideshow {
   position: relative;
-  padding: 15px;
-  margin-bottom: 15px;
-  background: rgba(255,255,255,0.8);
-  color: #000;
-  border-radius: 4px;
+  width: 100%;
+  height: 500px; /* Lartësia e slideshow-it */
+  overflow: hidden;
 }
 
-/* Butoni i porosisë: vendoset sipër (në cepin e djathtë) si një element i vogël pa tekst, me overlay (sfond gjysmë transparent) dhe hije */
-.order-btn {
+.slide {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 40px;
-  height: 40px;
-  background: rgba(255,255,255,0.9);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
-/* Efekti hover për buton (ndrysho ngjyrën nëse dëshirohet) */
-.order-btn:hover {
-  background: #e0e0e0;
+/* Vendosim foto sipas numrit (img1 deri tek img12) */
+.slide:nth-child(1) {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img1.jpg');
+}
+.slide:nth-child(2) {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img2.jpg');
+}
+.slide:nth-child(3) {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img3.jpg');
+}
+.slide:nth-child(4) {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img4.jpg');
+}
+.slide:nth-child(5) {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img5.jpg');
+}
+.slide:nth-child(6) {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img6.jpg');
+}
+.slide:nth-child(7) {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img7.jpg');
+}
+.slide:nth-child(8) {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img8.jpg');
+}
+.slide:nth-child(9) {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img9.jpg');
+}
+.slide:nth-child(10) {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img10.jpg');
+}
+.slide:nth-child(11) {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img11.jpg');
+}
+.slide:nth-child(12) {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img12.jpg');
 }
 
-/* Stilizimi i informacionit të pjatës */
-.dish-info {
-  display: block;
-  font-size: 18px;
+/* Klasa active bën një slide visible */
+.slide.active {
+  opacity: 1;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+}
+
+main section {
+  margin-bottom: 40px;
+}
+
+main section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #4682B4;
+  padding-bottom: 5px;
+}
+
+main section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+main section li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
 }
