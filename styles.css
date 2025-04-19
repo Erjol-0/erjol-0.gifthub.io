@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* Resetimi bazik */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -14,105 +14,116 @@ body {
 }
 
 /* Header */
-header {
-  background-color: #4682B4; /* ton boqielli */
-  padding: 20px;
+.bg-header {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
   text-align: center;
   color: #fff;
 }
-
-/* Slideshow "Hero" */
-.slideshow {
-  position: relative;
-  width: 100%;
-  height: 500px; /* Lartësia e slideshow-it */
-  overflow: hidden;
+.bg-header h1 {
+  font-size: 36px;
 }
 
-.slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+/* Hero Section */
+.bg-hero {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img2.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0;
-  transition: opacity 1s ease;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+.hero-text {
+  font-size: 72px;
+  font-weight: bold;
 }
 
-/* Vendosim foto sipas numrit (img1 deri tek img12) */
-.slide:nth-child(1) {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img1.jpg');
-}
-.slide:nth-child(2) {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img2.jpg');
-}
-.slide:nth-child(3) {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img3.jpg');
-}
-.slide:nth-child(4) {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img4.jpg');
-}
-.slide:nth-child(5) {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img5.jpg');
-}
-.slide:nth-child(6) {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img6.jpg');
-}
-.slide:nth-child(7) {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img7.jpg');
-}
-.slide:nth-child(8) {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img8.jpg');
-}
-.slide:nth-child(9) {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img9.jpg');
-}
-.slide:nth-child(10) {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img10.jpg');
-}
-.slide:nth-child(11) {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img11.jpg');
-}
-.slide:nth-child(12) {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img12.jpg');
-}
-
-/* Klasa active bën një slide visible */
-.slide.active {
-  opacity: 1;
-}
-
-/* Main content */
-main {
-  padding: 20px;
-}
-
-main section {
+/* Menu Sections */
+.menu-section {
+  padding: 40px 20px;
   margin-bottom: 40px;
+  position: relative;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.menu-section h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
 }
 
-main section h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #4682B4;
-  padding-bottom: 5px;
+/* Background images për secilin seksion */
+.bg-antipasti {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img3.jpg');
+  background-size: cover;
+  background-position: center;
 }
-
-main section ul {
-  list-style-type: none;
-  padding-left: 0;
+.bg-secondi {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img4.jpg');
+  background-size: cover;
+  background-position: center;
 }
-
-main section li {
-  padding: 8px 0;
-  border-bottom: 1px solid #ddd;
+.bg-insalatone {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img5.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-pizze {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img6.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-pizze-speciali {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img7.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-panuzzi {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img8.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-bevande {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img9.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-vini {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img10.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-prosecco {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img11.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 /* Footer */
-footer {
-  background-color: #333;
-  color: #fff;
+.bg-footer {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img12.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
   text-align: center;
-  padding: 15px 0;
-  font-size: 14px;
+  color: #fff;
+}
+
+/* Lista e pjatave */
+.menu-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+.menu-section li {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.menu-section li:hover {
+  background: rgba(255, 255, 255, 1);
 }
