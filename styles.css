@@ -11,15 +11,16 @@ body {
   background-color: #fdfdfd;
 }
 
-/* Të gjitha seksionet me sfondin nga fotot, teksti duhet të jetë i lexueshëm */
+/* Secilit seksion me sfondin e tij */
 header, .menu-section, footer {
   position: relative;
   background-size: cover;
   background-position: center;
   color: #fff;
+  margin-bottom: 20px; /* Hapësira midis seksioneve */
 }
 
-/* Overlay për transparencë, që e bën tekstin të dallojë mbi sfondin */
+/* Overlay për transparencë dhe lexueshmëri */
 .overlay {
   background: rgba(0, 0, 0, 0.5);
   padding: 20px;
@@ -27,7 +28,7 @@ header, .menu-section, footer {
   z-index: 1;
 }
 
-/* Header: sfondi nga img1 */
+/* Header - sfond nga img1 */
 .bg-header {
   height: 300px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img1.jpg');
@@ -36,7 +37,7 @@ header, .menu-section, footer {
   justify-content: center;
 }
 
-/* Featured section: sfondi nga img2 */
+/* Featured Section - sfond nga img2 */
 .bg-featured {
   height: 400px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img2.jpg');
@@ -45,7 +46,7 @@ header, .menu-section, footer {
   justify-content: center;
 }
 
-/* Seksionet e menusë me sfondin e tyre respectiv */
+/* Menu Sections: përdorim img3 deri tek img11 për sfondet e tyre */
 .bg-antipasti {
   min-height: 300px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img3.jpg');
@@ -100,7 +101,7 @@ header, .menu-section, footer {
   padding: 40px 20px;
 }
 
-/* Footer: sfondi nga img12 */
+/* Footer - sfond nga img12 */
 .bg-footer {
   height: 200px;
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img12.jpg');
@@ -109,7 +110,7 @@ header, .menu-section, footer {
   justify-content: center;
 }
 
-/* Stilizimi i titujve dhe listave */
+/* Stilizimi i titujve dhe tekstit */
 header h1,
 .menu-section h2,
 footer p {
@@ -122,9 +123,10 @@ footer p {
   margin-bottom: 15px;
 }
 
+/* Stilizimi i listave */
 .menu-section ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   margin: 0;
   position: relative;
   z-index: 2;
@@ -133,5 +135,24 @@ footer p {
 .menu-section li {
   font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Stilizimi i butonit për porosi */
+.order-btn {
+  background: #fff;
+  color: #4682B4; /* Ton bojëqielli */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.order-btn:hover {
+  background: #e0e0e0;
 }
