@@ -1,67 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/df40d67e8a084136b9b0d87147736189fb144823/lido-azzurro%20foto.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    margin: 0;
-    padding: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  color: #333;
 }
 
 header {
-    background-color: rgba(230, 57, 70, 0.8);
-    padding: 20px;
-    font-size: 28px;
-    font-weight: 600;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: rgba(230, 57, 70, 0.8);
+  padding: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Slideshow Hero Styles */
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Modifikoni sipas dëshirës */
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fade 36s infinite;
+}
+
+/* Caktojmë 12 foto me një vonesë prej 3 sekondash secila */
+.slide:nth-child(1) {
+  background-image: url('images/img1.jpg');
+  animation-delay: 0s;
+}
+.slide:nth-child(2) {
+  background-image: url('images/img2.jpg');
+  animation-delay: 3s;
+}
+.slide:nth-child(3) {
+  background-image: url('images/img3.jpg');
+  animation-delay: 6s;
+}
+.slide:nth-child(4) {
+  background-image: url('images/img4.jpg');
+  animation-delay: 9s;
+}
+.slide:nth-child(5) {
+  background-image: url('images/img5.jpg');
+  animation-delay: 12s;
+}
+.slide:nth-child(6) {
+  background-image: url('images/img6.jpg');
+  animation-delay: 15s;
+}
+.slide:nth-child(7) {
+  background-image: url('images/img7.jpg');
+  animation-delay: 18s;
+}
+.slide:nth-child(8) {
+  background-image: url('images/img8.jpg');
+  animation-delay: 21s;
+}
+.slide:nth-child(9) {
+  background-image: url('images/img9.jpg');
+  animation-delay: 24s;
+}
+.slide:nth-child(10) {
+  background-image: url('images/img10.jpg');
+  animation-delay: 27s;
+}
+.slide:nth-child(11) {
+  background-image: url('images/img11.jpg');
+  animation-delay: 30s;
+}
+.slide:nth-child(12) {
+  background-image: url('images/img12.jpg');
+  animation-delay: 33s;
+}
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  8%   { opacity: 1; }
+  25%  { opacity: 1; }
+  33%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Menu Content Styles */
 main {
-    max-width: 900px;
-    margin: 40px auto;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff; /* Hapësirë e pastër për çdo seksion */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 section {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
 h2 {
-    font-size: 26px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 li {
-    font-size: 18px;
-    padding: 10px;
-    margin: 5px 0;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 8px;
-    transition: background 0.3s ease;
+  font-size: 18px;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: rgba(230, 57, 70, 0.1);
+  border-radius: 8px;
+  transition: background 0.3s ease;
 }
 
 li:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
+  background-color: rgba(230, 57, 70, 0.3);
+  cursor: pointer;
 }
 
 footer {
-    background-color: rgba(34, 34, 34, 0.8);
-    padding: 15px;
-    font-size: 14px;
-    border-radius: 0 0 10px 10px;
-    margin-top: 20px;
+  background-color: rgba(34, 34, 34, 0.8);
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 0 0 10px 10px;
+  margin-top: 20px;
+  color: #fff;
 }
