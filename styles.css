@@ -38,51 +38,51 @@ header {
 
 /* Caktojmë 12 foto me një vonesë prej 3 sekondash secila */
 .slide:nth-child(1) {
-  background-image: url('images/img1.jpg');
+  background-image: url('https://github.com/Erjol-0/erjol-0.github.io/blob/main/img1.jpg?raw=true');
   animation-delay: 0s;
 }
 .slide:nth-child(2) {
-  background-image: url('images/img2.jpg');
+  background-image: url('');
   animation-delay: 3s;
 }
 .slide:nth-child(3) {
-  background-image: url('images/img3.jpg');
+  background-image: url('');
   animation-delay: 6s;
 }
 .slide:nth-child(4) {
-  background-image: url('images/img4.jpg');
+  background-image: url('');
   animation-delay: 9s;
 }
 .slide:nth-child(5) {
-  background-image: url('images/img5.jpg');
+  background-image: url('');
   animation-delay: 12s;
 }
 .slide:nth-child(6) {
-  background-image: url('images/img6.jpg');
+  background-image: url('');
   animation-delay: 15s;
 }
 .slide:nth-child(7) {
-  background-image: url('images/img7.jpg');
+  background-image: url('');
   animation-delay: 18s;
 }
 .slide:nth-child(8) {
-  background-image: url('images/img8.jpg');
+  background-image: url('');
   animation-delay: 21s;
 }
 .slide:nth-child(9) {
-  background-image: url('images/img9.jpg');
+  background-image: url('');
   animation-delay: 24s;
 }
 .slide:nth-child(10) {
-  background-image: url('images/img10.jpg');
+  background-image: url('');
   animation-delay: 27s;
 }
 .slide:nth-child(11) {
-  background-image: url('images/img11.jpg');
+  background-image: url('');
   animation-delay: 30s;
 }
 .slide:nth-child(12) {
-  background-image: url('images/img12.jpg');
+  background-image: url('');
   animation-delay: 33s;
 }
 
