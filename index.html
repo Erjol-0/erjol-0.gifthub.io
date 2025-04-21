@@ -3,122 +3,261 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu - Lido Azzurro</title>
+    <title>menu del ristorante - Lido Azzurro</title>
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
   </head>
   <body>
-    <!-- Header me foto të sfondit (img1) -->
+    <!-- Header me sfondin e img1 -->
     <header class="bg-header">
-      <h1>Menù del Ristorante - Lido Azzurro</h1>
+      <h1>menu del ristorante - Lido Azzurro</h1>
+      <!-- "Contact us" dhe "Hours" do të jenë placeholder -->
+      <div class="header-info">
+        <p>Contact us</p>
+        <p>Hours</p>
+      </div>
     </header>
 
-    <!-- Hero / Faqja e parë me foto të sfondit (img2) dhe titull "Benvenuti" të madh -->
+    <!-- Hero/Faqja e parë me sfondin e img2 -->
     <section class="hero bg-hero">
       <h2 class="hero-text">Benvenuti</h2>
     </section>
 
     <main>
-      <!-- Antipasti & Primi Piatti (sfondi: img3) -->
-      <section id="antipasti-primi" class="menu-section bg-antipasti">
-        <h2>Antipasti &amp; Primi Piatti</h2>
+      <!-- Seksioni Cibo -->
+      <section id="cibo" class="menu-section bg-cibo">
+        <h2>Cibo</h2>
+        <!-- Antipasti -->
+        <div class="sub-section">
+          <h3>Antipasti</h3>
+          <ul>
+            <li>Focaccia bianca - 4.00$</li>
+            <li>Focaccia rossa - 4.50$</li>
+            <li>Caprese - 10$</li>
+            <li>Prosciutto crudo e melone - 14$</li>
+            <li>Zuppa di Cozze - 12$</li>
+            <li>Saute di Cozze e Vongole - 15$</li>
+            <li>Tris Fume (Salmone, tono, spada) - 15$</li>
+            <li>Gamberetti alla Catalana - 15$</li>
+            <li>Misto mare olio e Limone - 15.00$</li>
+          </ul>
+        </div>
+        <!-- Primi Piatti -->
+        <div class="sub-section">
+          <h3>Primi Piatti</h3>
+          <ul>
+            <li>Spaghetti aglio, olio e peperoncino - 10$</li>
+            <li>Spaghetti alle Vongole - 15$</li>
+            <li>Spaghetti allo scoglio - 15$</li>
+            <li>Risotto ai Frutti di Mare - 15$</li>
+            <li>Spaghetti alla Carbonara - 12$</li>
+            <li>Tagliatelle al Ragù - 10$</li>
+            <li>Penne all'Arrabbiata - 10$</li>
+            <li>Gnocchi al Bagos e Tartufo - 14$</li>
+            <li>Gnocchi con Pomodoro e Bufala - 12$</li>
+            <li>Bucatini Cacio e Pepe - 15$</li>
+          </ul>
+        </div>
+        <!-- Secondi Pesce -->
+        <div class="sub-section">
+          <h3>Secondi Pesce</h3>
+          <ul>
+            <li>Branzino alla Griglia - 18$</li>
+            <li>Pescato del lago alla griglia - 16$</li>
+            <li>Misto gamberoni e scamponi al griglia - 20$</li>
+            <li>Grigliata mista di pesce - 25$</li>
+            <li>Fritto misto - 18$</li>
+            <li>Trancio di spada ai ferri - 16$</li>
+            <li>Trancio di pesce spada alla siciliana - 18.00$</li>
+            <li>Bocconcini di pesce spada con timo e zucchini - 18.00$</li>
+          </ul>
+        </div>
+        <!-- Secondi Carne -->
+        <div class="sub-section">
+          <h3>Secondi Carne</h3>
+          <ul>
+            <li>Roast beef rucola e Grana - 12$</li>
+            <li>Bistecca ai Ferri - 12$</li>
+            <li>Entrecote di Manzo ai Ferri - 16$</li>
+            <li>Vitello tonnato - 12$</li>
+            <li>Cotoletta Orecchia di Elefante - 20$</li>
+            <li>Tagliata di Manzo, Rucola e Grana - 18$</li>
+            <li>Costata ai Ferri - 25$</li>
+            <li>Nuggets di Pollo - 12$</li>
+            <li>Hamburger con patate fritte - 12$</li>
+          </ul>
+        </div>
+        <!-- Contorni -->
+        <div class="sub-section">
+          <h3>Contorni</h3>
+          <ul>
+            <li>Insalata Mista - 4$</li>
+            <li>Patate Fritte - 4$</li>
+            <li>Verdure alla Griglia - 5$</li>
+            <li>Spinaci al Burro - 5$</li>
+          </ul>
+          <p class="note">(Tutti i secondi vengono serviti con contorno.)</p>
+        </div>
+        <!-- Insalatone -->
+        <div class="sub-section">
+          <h3>Insalatone</h3>
+          <ul>
+            <li>Caesar di pollo - 11$</li>
+            <li>Caesar di gamberi - 12$</li>
+            <li>Nadine - 12$</li>
+            <li>Lido - 11$</li>
+            <li>Greca - 12$</li>
+            <li>Maderno - 11$</li>
+          </ul>
+        </div>
+        <!-- Panini Gourmet -->
+        <div class="sub-section">
+          <h3>Panini Gourmet</h3>
+          <ul>
+            <li>Club Sandwich Pollo - 12$</li>
+            <li>Club Sandwich Salmone - 14$</li>
+            <li>Classic Burger - 13$</li>
+            <li>Tommy Burger - 15$</li>
+            <li>Pulled Pork - 13$</li>
+          </ul>
+        </div>
+        <!-- Pizze -->
+        <div class="sub-section">
+          <h3>Pizze</h3>
+          <ul>
+            <li>Focaccia bianca (olive, rosmarino) - 4.00$</li>
+            <li>Focaccia rossa (pomodoro, origano, aglio) - 4.50$</li>
+            <li>Marinara - 6.00$</li>
+            <li>Margherita - 7.00$</li>
+            <li>Siciliana - 8.00$</li>
+            <li>Napoli - 8.00$</li>
+            <li>Diavola - 8.50$</li>
+            <li>Romana - 8.50$</li>
+            <li>Capricciosa - 9.50$</li>
+            <li>Prosciutto - 8.50$</li>
+            <li>Champignon - 8.50$</li>
+            <li>Parmigiana - 9.00$</li>
+            <li>4 Stagioni - 9.50$</li>
+            <li>4 Formaggi - 9.50$</li>
+            <li>Regina - 9.00$</li>
+            <li>Hawaii - 9.50$</li>
+            <li>Bomba - 9.50$</li>
+            <li>Calzone - 8.50$</li>
+            <li>Calzone Farcito - 10.00$</li>
+            <li>Calzone tipo Napoli - 10.00$</li>
+            <li>Salsiccia e peperoni - 10.00$</li>
+            <li>Verdure - 9.50$</li>
+            <li>Bufalina - 9.00$</li>
+            <li>Valtellina - 11.50$</li>
+            <li>Crudo e porcini - 11.00$</li>
+            <li>Gorgo e speck - 10.50$</li>
+            <li>Bagos e salsiccia - 10.50$</li>
+            <li>Special - 9.50$</li>
+            <li>Canadese - 11.00$</li>
+            <li>Gustoza - 11.00$</li>
+            <li>Nostromo - 9.50$</li>
+            <li>Pirata - 13.00$</li>
+            <li>Americana - 9.00$</li>
+            <li>Pugliese - 8.00$</li>
+            <li>Vesuvio (per due persone) - 18.00$</li>
+          </ul>
+        </div>
+        <!-- Panozzi -->
+        <div class="sub-section">
+          <h3>Panozzi</h3>
+          <ul>
+            <li>Classico - 8.00$</li>
+            <li>Rustico - 9.00$</li>
+            <li>Vegetariano - 8.50$</li>
+            <li>Legero - 7.50$</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Seksioni Dessert -->
+      <section id="dessert" class="menu-section bg-dessert">
+        <h2>Dessert</h2>
         <ul>
-          <li>Caprese - €10,00</li>
-          <li>Prosciutto crudo e melone - €14,00</li>
-          <li>Zuppa di cozze - €12,00</li>
-          <li>Spaghetti alle vongole - €15,00</li>
-          <li>Spaghetti allo scoglio - €15,00</li>
-          <li>Risotto ai frutti di mare - €15,00</li>
+          <li>Crema al caffe - 4.00$</li>
+          <li>Semifreddo Affogato al caffe - 5.00$</li>
+          <li>Semifreddo al whisky - 6.00$</li>
+          <li>Tartufo Bianco o nero - 4.50$</li>
+          <li>Frutta di stagione - S.Q</li>
+          <li>Tiramisu - 5.00$</li>
+          <li>Panna cota a scelta - 5.00$</li>
+          <li>Torta di mele farcita - 5.00$</li>
+          <li>Profiteroles - 5.00$</li>
+          <li>Meringata - 5.00$</li>
         </ul>
       </section>
 
-      <!-- Secondi Piatti - Pesce & Carne (sfondi: img4) -->
-      <section id="secondi" class="menu-section bg-secondi">
-        <h2>Secondi Piatti - Pesce &amp; Carne</h2>
+      <!-- Seksioni Bevande -->
+      <section id="bevande" class="menu-section bg-bevande2">
+        <h2>Bevande</h2>
         <ul>
-          <li>Filetto di Branzino - €18,00</li>
-          <li>Orata al forno - €16,00</li>
-          <li>Bistecca alla Fiorentina - €22,00</li>
-          <li>Pollo alla Cacciatora - €17,00</li>
+          <li>Acqua Naturale o Frizzante 0,75 litro - 3.00$</li>
+          <li>Bibite in lattina - 3.00$</li>
+          <li>Birra alla Spina Piccola/Media - 4.00$ / 6.00$</li>
+          <li>Birra in Bottiglia 66 cl - 6.00$</li>
+          <li>Birra Rossa in Bottiglia - 5.00$</li>
+          <li>Birra Analcolica - 4.00$</li>
+          <li>Amari della Casa - 4.00$</li>
+          <li>Liquori Nazionali - 4.00$</li>
+          <li>Liquori Esteri - 5.00$</li>
+          <li>Cappuccino - 2.50$</li>
+          <li>Caffee – Espresso - 2.00$</li>
+          <li>Caraffa Vino sfuso (Piccola) - 4.50$</li>
+          <li>Caraffa Vino sfuso (Media) - 7.00$</li>
+          <li>Caraffa Vino sfuso (Grande) - 12.00$</li>
+          <li>Vino al calice - da 3.00$ deri 5.00$</li>
         </ul>
-      </section>
-
-      <!-- Insalatone, Contorni & Panini Gourmet (sfondi: img5) -->
-      <section id="insalatone-contorni" class="menu-section bg-insalatone">
-        <h2>Insalatone, Contorni &amp; Panini Gourmet</h2>
+        
+        <h3>Vini Rossi</h3>
         <ul>
-          <li>Insalata mista - €8,00</li>
-          <li>Patate al forno - €7,00</li>
-          <li>Panino con Salame &amp; Mozzarella - €9,00</li>
-          <li>Bruschette miste - €6,00</li>
+          <li>CA DEI FRATI RONCHEDONE - 35$</li>
+          <li>GROPPELLO COSTARIPA CASTELLINE - 25$</li>
+          <li>BARDOLINO CESARI - 13$</li>
+          <li>VALPOLICELLA CLASSICO ALLEGRINI - 24$</li>
+          <li>CHIANTI ANTINORI - 32$</li>
         </ul>
-      </section>
-
-      <!-- Pizze (sfondi: img6) -->
-      <section id="pizze" class="menu-section bg-pizze">
-        <h2>Pizze</h2>
+        
+        <h3>Vini Bianchi</h3>
         <ul>
-          <li>Margherita - €8,00</li>
-          <li>Marinara - €7,50</li>
-          <li>Quattro Stagioni - €10,00</li>
-          <li>Diavola - €10,00</li>
+          <li>PINOT BIANCO ALOIS LAGEDER - 28$</li>
+          <li>CHARDONNAY ALOIS LAGEDER - 28$</li>
+          <li>GEWÜRZTRAMINER SCHRECKBICHL COLTERENZIO - 24$</li>
+          <li>SAUVIGNON FALLWIND - 32$</li>
+          <li>LUGANA EUFRASIA - 15$</li>
+          <li>LUGANA BROLETTINO - 32$</li>
+          <li>LUGANA CA DEI FRATI - 28$</li>
+          <li>LUGANA SELVA CAPUZZA - 25$</li>
+          <li>SOAVE PIERO PAN - 25$</li>
         </ul>
-      </section>
-
-      <!-- Pizze Speciali (sfondi: img7) -->
-      <section id="pizze-speciali" class="menu-section bg-pizze-speciali">
-        <h2>Pizze Speciali</h2>
+        
+        <h3>Vini Rosé</h3>
         <ul>
-          <li>Pizza al Tartufo - €14,00</li>
-          <li>Pizza ai Quattro Formaggi - €12,00</li>
-          <li>Pizza con Prosciutto e Rucola - €13,00</li>
+          <li>TOSCANA - 25$</li>
+          <li>FRESCOBALDI ALÌE TOSCANA IGT - 25$</li>
+          <li>ROSA DEI FRATI ROSÈ - 25$</li>
         </ul>
-      </section>
-
-      <!-- Panuzzi & Dessert e Frutta (sfondi: img8) -->
-      <section id="panuzzi-desserts" class="menu-section bg-panuzzi">
-        <h2>Panuzzi &amp; Dessert e Frutta</h2>
+        
+        <h3>Prosecco e Bollicine</h3>
         <ul>
-          <li>Tiramisù - €6,50</li>
-          <li>Cheesecake al Limoncello - €7,00</li>
-          <li>Frutta Fresca - €5,00</li>
-        </ul>
-      </section>
-
-      <!-- Bevande e Vini Sfusi (sfondi: img9) -->
-      <section id="bevande-vini-sfusi" class="menu-section bg-bevande">
-        <h2>Bevande e Vini Sfusi</h2>
-        <ul>
-          <li>Birra Artigianale (0,33L) - €4,50</li>
-          <li>Bibita (cola, aranciata) - €3,00</li>
-          <li>Acqua Naturale/Frizzante - €2,50</li>
-        </ul>
-      </section>
-
-      <!-- Vini Rossi, Bianchi & Rosé (sfondi: img10) -->
-      <section id="vini-rossi-bianchi-rose" class="menu-section bg-vini">
-        <h2>Vini Rossi, Bianchi &amp; Rosé</h2>
-        <ul>
-          <li>Chianti Classico 2019 (Rossi) - €18,00</li>
-          <li>Pinot Grigio 2020 (Bianchi) - €16,00</li>
-          <li>Rosé della Casa - €17,00</li>
-        </ul>
-      </section>
-
-      <!-- Prosecco e Bollicine & Champagne (sfondi: img11) -->
-      <section id="prosecco-bollicine-champagne" class="menu-section bg-prosecco">
-        <h2>Prosecco e Bollicine &amp; Champagne</h2>
-        <ul>
-          <li>Prosecco DOC (Standard) - €12,00</li>
-          <li>Bollicine Extra Dry - €15,00</li>
-          <li>Champagne Brut - €40,00</li>
+          <li>FERRARI MAXIMUM BRUT - 55$</li>
+          <li>PROSECCO VICTORIA DOC MILLESIMATO - 18.00$</li>
+          <li>CONTARINI DOC MILLESIMATO EXTRA DRY - 22.00$</li>
+          <li>CASTELLO GUSSAGO SATEN FRANCIACORTA - 50.00$</li>
+          <li>VILLA CRESPIA NOVALIA FRANCIACORTA BRUT - 55.00$</li>
+          <li>FRANCIACORTA MONTINA - 40.00$</li>
+          <li>BELLAVISTA FRANCIACORTA Alma Gran Cuvee Brut DOCG - 65.00$</li>
+          <li>CA DEL BOSCO FRANCIACORTA CUVEE PRESTIGE DOCG - 65.00$</li>
         </ul>
       </section>
     </main>
 
-    <!-- Footer (sfondi: img12) -->
+    <!-- Footer me sfondin e img12 -->
     <footer class="bg-footer">
-      <p>Coperto €2,00 - &copy; 2025 Lido Azzurro</p>
+      <p>Coperto 2.00$ - &copy; 2025 Lido Azzurro</p>
     </footer>
   </body>
 </html>
