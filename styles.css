@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* Reset */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +8,13 @@
 }
 
 body {
+  /* Vendosim hue-in e Light Sky Blue për të gjitha pjesët */
   font-family: 'Poppins', sans-serif;
-  background-color: #fdfdfd;
+  background-color: #87CEFA; /* Light Sky Blue */
   color: #333;
 }
 
-/* Header – sfondi nga img1 */
+/* HEADER – sfondi nga img1 */
 .bg-header {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img1.jpg');
   background-size: cover;
@@ -32,7 +33,7 @@ body {
   font-size: 16px;
 }
 
-/* Hero – sfondi nga img2 */
+/* HERO – sfondi nga img2 */
 .bg-hero {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img2.jpg');
   background-size: cover;
@@ -46,7 +47,7 @@ body {
   font-weight: 700;
 }
 
-/* Tabs Navigation – butonat me sfond transparente dhe border jeshil të lehtë */
+/* TABS NAVIGATION – butonat me sfond transparente dhe border jeshil të lehtë */
 .tabs {
   text-align: center;
   margin: 20px 0;
@@ -68,7 +69,7 @@ body {
   color: #fff;
 }
 
-/* Tab Container & Content */
+/* TAB CONTAINER & CONTENT */
 .tab-container {
   padding: 20px;
 }
@@ -84,21 +85,11 @@ body {
   display: block;
 }
 
-/* Background për tab "Cibo": ngjyrë pale bojqelli, pa imazh */
-.bg-cibo {
-  background-color: #d4eac7;
-}
-
-/* Mbeten sfondi origjinal për tab "Dessert" dhe "Bevande" */
-.bg-dessert {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img4.jpg');
-  background-size: cover;
-  background-position: center;
-}
+/* Për secilin tab, e gjithë sfondi i vendosur është tani Light Sky Blue (#87CEFA) */
+.bg-cibo,
+.bg-dessert,
 .bg-bevande {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img5.jpg');
-  background-size: cover;
-  background-position: center;
+  background-color: #87CEFA;
 }
 
 /* Stilimi i listave të përmbajtjes */
@@ -114,7 +105,7 @@ body {
   list-style: none;
   padding-left: 0;
 }
-/* Për elementet në tab "Cibo" (në nënseksione) */
+/* Elementet në tab "Cibo" */
 .sub-section li {
   position: relative;
   padding: 10px 15px;
@@ -129,7 +120,7 @@ body {
 .sub-section li:hover {
   background: rgba(0,0,0,0.6);
 }
-/* Për elementet në tab "Dessert" dhe "Bevande", rritja pak e tekstit */
+/* Në tab "Dessert" dhe "Bevande" madhësia e tekstit u rrit */
 #dessert ul li,
 #bevande ul li {
   font-size: 32px;
@@ -145,7 +136,7 @@ body {
   background: rgba(0,0,0,0.6);
 }
 
-/* Footer – sfondi nga img12 */
+/* FOOTER – sfondi nga img12 */
 .bg-footer {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img12.jpg');
   background-size: cover;
