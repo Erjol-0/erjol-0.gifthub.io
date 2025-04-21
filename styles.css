@@ -13,7 +13,7 @@ body {
   color: #333;
 }
 
-/* Header - përdorim img1 si sfond */
+/* Header (img1) */
 .bg-header {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img1.jpg');
   background-size: cover;
@@ -21,6 +21,7 @@ body {
   padding: 40px 20px;
   text-align: center;
   color: #fff;
+  position: relative;
 }
 .bg-header h1 {
   font-size: 36px;
@@ -31,7 +32,7 @@ body {
   font-size: 16px;
 }
 
-/* Hero - përdorim img2 */
+/* Hero section (img2) */
 .bg-hero {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img2.jpg');
   background-size: cover;
@@ -45,23 +46,60 @@ body {
   font-weight: 700;
 }
 
-/* Seksionet e menusë kryesore */
-.menu-section {
-  padding: 40px 20px;
-  margin-bottom: 40px;
-  position: relative;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+/* Tabs Navigation */
+.tabs {
+  text-align: center;
+  margin: 20px 0;
 }
-.menu-section h2 {
-  margin-bottom: 20px;
-  font-size: 32px;
+.tabs .tablink {
+  background: #4682B4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 18px;
   text-transform: uppercase;
-  border-bottom: 2px solid #fff;
-  padding-bottom: 10px;
+  transition: background 0.3s ease;
+}
+.tabs .tablink.active,
+.tabs .tablink:hover {
+  background: #315f86;
 }
 
-/* Nënseksionet brenda seksionit Cibo */
+/* Tab Container & Content */
+.tab-container {
+  padding: 20px;
+}
+.tab-content {
+  display: none;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.tab-content.active {
+  display: block;
+}
+
+/* Background images for tabs */
+.bg-cibo {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-dessert {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-bevande {
+  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img5.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Sub-sections within a tab */
 .sub-section {
   margin-bottom: 30px;
 }
@@ -84,10 +122,9 @@ body {
   cursor: pointer;
   transition: background 0.3s ease;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
-  font-size: 28px; /* Madhësi e madhe për dukshmëri */
+  font-size: 28px;
 }
-
-/* Efekti hover mbi pjatë: overlay i lehtë */
+/* Hover overlay on dish items */
 .sub-section li::before {
   content: "";
   position: absolute;
@@ -109,24 +146,7 @@ body {
   z-index: 1;
 }
 
-/* Sektoret kryesore për Cibo, Dessert dhe Bevande - ndryshime në sfond */
-.bg-cibo {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img3.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.bg-dessert {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img4.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.bg-bevande2 {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img5.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-/* Footer - përdorim img12 */
+/* Footer (img12) */
 .bg-footer {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img12.jpg');
   background-size: cover;
