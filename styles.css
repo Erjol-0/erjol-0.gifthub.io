@@ -46,14 +46,14 @@ body {
   font-weight: 700;
 }
 
-/* Tabs Navigation – krijo një barrë transparente me border dhe shkronja jeshile të lehta */
+/* Tabs Navigation – butonat me sfond transparente dhe border jeshil të lehtë */
 .tabs {
   text-align: center;
   margin: 20px 0;
 }
 .tabs .tablink {
   background: rgba(255, 255, 255, 0.2);
-  border: 2px solid #7ed957; /* nuancë e lehtë jeshile */
+  border: 2px solid #7ed957;
   color: #7ed957;
   padding: 10px 20px;
   margin: 0 5px;
@@ -84,12 +84,12 @@ body {
   display: block;
 }
 
-/* Background images për secilin tab (përdorim img3, img4, img5) */
+/* Background për tab "Cibo": ngjyrë pale bojqelli, pa imazh */
 .bg-cibo {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img3.jpg');
-  background-size: cover;
-  background-position: center;
+  background-color: #d4eac7;
 }
+
+/* Mbeten sfondi origjinal për tab "Dessert" dhe "Bevande" */
 .bg-dessert {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img4.jpg');
   background-size: cover;
@@ -101,7 +101,7 @@ body {
   background-position: center;
 }
 
-/* Sub-seksionet brenda tab-it "Cibo" */
+/* Stilimi i listave të përmbajtjes */
 .sub-section {
   margin-bottom: 30px;
 }
@@ -114,18 +114,34 @@ body {
   list-style: none;
   padding-left: 0;
 }
+/* Për elementet në tab "Cibo" (në nënseksione) */
 .sub-section li {
   position: relative;
   padding: 10px 15px;
   margin-bottom: 10px;
-  background: rgba(0,0,0,0.4); /* overlay i lehtë për kontrast */
+  background: rgba(0,0,0,0.4);
   color: #fff;
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.3s ease;
-  font-size: 28px; /* madhësi e madhe e tekstit */
+  font-size: 28px;
 }
 .sub-section li:hover {
+  background: rgba(0,0,0,0.6);
+}
+/* Për elementet në tab "Dessert" dhe "Bevande", rritja pak e tekstit */
+#dessert ul li,
+#bevande ul li {
+  font-size: 32px;
+  padding: 12px 18px;
+  margin-bottom: 12px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#dessert ul li:hover,
+#bevande ul li:hover {
   background: rgba(0,0,0,0.6);
 }
 
