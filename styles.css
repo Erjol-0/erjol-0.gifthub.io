@@ -13,7 +13,7 @@ body {
   color: #333;
 }
 
-/* Header (img1) */
+/* Header – sfondi nga img1 */
 .bg-header {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img1.jpg');
   background-size: cover;
@@ -26,13 +26,13 @@ body {
 .bg-header h1 {
   font-size: 36px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .header-info {
-  margin-top: 10px;
   font-size: 16px;
 }
 
-/* Hero section (img2) */
+/* Hero – sfondi nga img2 */
 .bg-hero {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img2.jpg');
   background-size: cover;
@@ -46,25 +46,26 @@ body {
   font-weight: 700;
 }
 
-/* Tabs Navigation */
+/* Tabs Navigation – krijo një barrë transparente me border dhe shkronja jeshile të lehta */
 .tabs {
   text-align: center;
   margin: 20px 0;
 }
 .tabs .tablink {
-  background: #4682B4;
-  color: #fff;
-  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #7ed957; /* nuancë e lehtë jeshile */
+  color: #7ed957;
   padding: 10px 20px;
   margin: 0 5px;
   cursor: pointer;
   font-size: 18px;
   text-transform: uppercase;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 .tabs .tablink.active,
 .tabs .tablink:hover {
-  background: #315f86;
+  background: #7ed957;
+  color: #fff;
 }
 
 /* Tab Container & Content */
@@ -73,6 +74,7 @@ body {
 }
 .tab-content {
   display: none;
+  position: relative;
   padding: 40px 20px;
   margin-bottom: 40px;
   color: #fff;
@@ -82,7 +84,7 @@ body {
   display: block;
 }
 
-/* Background images for tabs */
+/* Background images për secilin tab (përdorim img3, img4, img5) */
 .bg-cibo {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img3.jpg');
   background-size: cover;
@@ -99,7 +101,7 @@ body {
   background-position: center;
 }
 
-/* Sub-sections within a tab */
+/* Sub-seksionet brenda tab-it "Cibo" */
 .sub-section {
   margin-bottom: 30px;
 }
@@ -116,37 +118,18 @@ body {
   position: relative;
   padding: 10px 15px;
   margin-bottom: 10px;
-  background: transparent;
+  background: rgba(0,0,0,0.4); /* overlay i lehtë për kontrast */
   color: #fff;
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.3s ease;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
-  font-size: 28px;
+  font-size: 28px; /* madhësi e madhe e tekstit */
 }
-/* Hover overlay on dish items */
-.sub-section li::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.4);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 4px;
-  z-index: 0;
-}
-.sub-section li:hover::before {
-  opacity: 1;
-}
-.sub-section li > * {
-  position: relative;
-  z-index: 1;
+.sub-section li:hover {
+  background: rgba(0,0,0,0.6);
 }
 
-/* Footer (img12) */
+/* Footer – sfondi nga img12 */
 .bg-footer {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img12.jpg');
   background-size: cover;
