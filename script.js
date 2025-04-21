@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Tab switching functionality
+  // Funksionaliteti i ndërprerjes së tab-ve
   const tablinks = document.querySelectorAll('.tablink');
   const tabContents = document.querySelectorAll('.tab-content');
   
   tablinks.forEach(button => {
     button.addEventListener('click', () => {
-      // Remove active class from all tab buttons and contents
+      // Hiq klasat aktive prej të gjithë butonave dhe përmbajtjeve
       tablinks.forEach(btn => btn.classList.remove('active'));
       tabContents.forEach(content => content.classList.remove('active'));
       
-      // Add active class to clicked tab and corresponding content
+      // Shto klasën aktive në butonin e shtypur dhe përmbajtjen përkatëse
       button.classList.add('active');
       const tabId = button.getAttribute('data-tab');
       document.getElementById(tabId).classList.add('active');
     });
   });
   
-  // Dish clicking – show alert with dish name and price
+  // Kur klikohet një pjatë, shfaq alert me emrin dhe çmimin
   const dishItems = document.querySelectorAll('.sub-section ul li, #dessert ul li, #bevande ul li');
   
   dishItems.forEach(item => {
@@ -33,3 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
