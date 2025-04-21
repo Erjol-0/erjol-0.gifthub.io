@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   // Dish clicking – show alert with dish name and price
-  const dishItems = document.querySelectorAll('.sub-section ul li');
+  const dishItems = document.querySelectorAll('.sub-section ul li, #dessert ul li, #bevande ul li');
   
   dishItems.forEach(item => {
     item.addEventListener('click', () => {
