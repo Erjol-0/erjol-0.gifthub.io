@@ -13,7 +13,7 @@ body {
   color: #333;
 }
 
-/* Header */
+/* Header - përdorim img1 si sfond */
 .bg-header {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img1.jpg');
   background-size: cover;
@@ -24,9 +24,14 @@ body {
 }
 .bg-header h1 {
   font-size: 36px;
+  text-transform: uppercase;
+}
+.header-info {
+  margin-top: 10px;
+  font-size: 16px;
 }
 
-/* Hero Section */
+/* Hero - përdorim img2 */
 .bg-hero {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img2.jpg');
   background-size: cover;
@@ -37,10 +42,10 @@ body {
 }
 .hero-text {
   font-size: 72px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-/* Menu Sections */
+/* Seksionet e menusë kryesore */
 .menu-section {
   padding: 40px 20px;
   margin-bottom: 40px;
@@ -50,57 +55,78 @@ body {
 }
 .menu-section h2 {
   margin-bottom: 20px;
-  font-size: 28px;
+  font-size: 32px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
 }
 
-/* Background images për secilin seksion */
-.bg-antipasti {
+/* Nënseksionet brenda seksionit Cibo */
+.sub-section {
+  margin-bottom: 30px;
+}
+.sub-section h3 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  text-decoration: underline;
+}
+.sub-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+.sub-section li {
+  position: relative;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background: transparent;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+  font-size: 28px; /* Madhësi e madhe për dukshmëri */
+}
+
+/* Efekti hover mbi pjatë: overlay i lehtë */
+.sub-section li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 4px;
+  z-index: 0;
+}
+.sub-section li:hover::before {
+  opacity: 1;
+}
+.sub-section li > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Sektoret kryesore për Cibo, Dessert dhe Bevande - ndryshime në sfond */
+.bg-cibo {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img3.jpg');
   background-size: cover;
   background-position: center;
 }
-.bg-secondi {
+.bg-dessert {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img4.jpg');
   background-size: cover;
   background-position: center;
 }
-.bg-insalatone {
+.bg-bevande2 {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img5.jpg');
   background-size: cover;
   background-position: center;
 }
-.bg-pizze {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img6.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.bg-pizze-speciali {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img7.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.bg-panuzzi {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img8.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.bg-bevande {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img9.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.bg-vini {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img10.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.bg-prosecco {
-  background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img11.jpg');
-  background-size: cover;
-  background-position: center;
-}
 
-/* Footer */
+/* Footer - përdorim img12 */
 .bg-footer {
   background-image: url('https://raw.githubusercontent.com/Erjol-0/erjol-0.github.io/main/img12.jpg');
   background-size: cover;
@@ -108,47 +134,5 @@ body {
   padding: 20px;
   text-align: center;
   color: #fff;
-}
-
-/* Lista e pjatave */
-.menu-section ul {
-  list-style: none;
-  padding-left: 0;
-}
-.menu-section li {
-  position: relative;
-  padding: 10px 15px;
-  margin-bottom: 10px;
-  background: transparent; /* nuk ka sfond konstant */
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-  font-size: 24px; /* Rritet madhësia e tekstit për pjatat */
-}
-
-/* Overlay sipas hover-it mbi një pjatë */
-.menu-section li::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 4px;
-  z-index: 0;
-}
-
-.menu-section li:hover::before {
-  opacity: 1;
-}
-
-/* Sigurojmë që përmbajtja e li-së shfaqet mbi overlay */
-.menu-section li > * {
-  position: relative;
-  z-index: 1;
+  font-size: 18px;
 }
