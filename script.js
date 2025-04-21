@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
   dishItems.forEach(item => {
     item.addEventListener('click', () => {
-      // Presupozohet se format i tekstit është "Emri i pjates - Çmimi"
+      // Presupozohet format: "Emri i pjates - Çmimi"
       const fullText = item.textContent.trim();
       const parts = fullText.split(" - ");
-      if (parts.length === 2) {
+      if(parts.length === 2) {
         const dishName = parts[0];
         const dishPrice = parts[1];
         alert("Pjata: " + dishName + "\nKushton: " + dishPrice);
