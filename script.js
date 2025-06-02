@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (parts.length === 2) {
         const dishName = parts[0];
         const dishPrice = parts[1];
-        alert("Pjata: " + dishName + "\nKushton: " + dishPrice);
+        alert(dishName + "\ncosta: " + dishPrice);
       } else {
-        alert("Pjata: " + fullText);
+        alert("Il piatto: " + fullText);
       }
     });
   });
